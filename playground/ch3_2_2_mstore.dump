@@ -1,0 +1,12 @@
+
+ch3_2_2_mstore.o:	file format elf64-x86-64
+
+Disassembly of section .text:
+
+0000000000000000 <multstore>:
+       0: 53                           	pushq	%rbx
+       1: 48 89 d3                     	movq	%rdx, %rbx
+       4: e8 00 00 00 00               	callq	0x9 <multstore+0x9>
+       9: 48 89 03                     	movq	%rax, (%rbx)
+       c: 5b                           	popq	%rbx
+       d: c3                           	retq
